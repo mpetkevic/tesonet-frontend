@@ -12,7 +12,7 @@ class Home extends Component {
   async componentDidMount() {
     const token = localStorage.getItem('tesonet-token');
     if(token) {
-      const res = await axios.get('http://playground.tesonet.lt/v1/servers', {
+      const res = await axios.get('https://playground.tesonet.lt/v1/servers', {
         headers: {'Authorization': token}
       });
       this.setState({servers: res.data})
