@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/tesonet-frontend/precache-manifest.ecf8dbbd27466360cd175e1e6aa775cd.js"
+  "/tesonet-frontend/precache-manifest.08b9399782a0ffa472d4d950cb26e80f.js"
 );
 
 workbox.clientsClaim();
