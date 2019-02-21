@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/tesonet-frontend/static/css/main.d049e7bd.chunk.css"
   },
   {
-    "revision": "6332f2f1ea753b58db64c3c8a015d767",
+    "revision": "776e736ccbf495204382cb38d616e298",
     "url": "/tesonet-frontend/index.html"
   }
 ];
