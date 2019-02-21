@@ -12,19 +12,19 @@ self.__precacheManifest = [
     "url": "/tesonet-frontend/static/js/runtime~main.8400e24c.js"
   },
   {
-    "revision": "3a3e5e9a89b523f16653",
-    "url": "/tesonet-frontend/static/js/main.3a3e5e9a.chunk.js"
+    "revision": "4fa5db517788f6e44b11",
+    "url": "/tesonet-frontend/static/js/main.4fa5db51.chunk.js"
   },
   {
     "revision": "a79e27ec91c2e647dec0",
     "url": "/tesonet-frontend/static/js/2.a79e27ec.chunk.js"
   },
   {
-    "revision": "3a3e5e9a89b523f16653",
+    "revision": "4fa5db517788f6e44b11",
     "url": "/tesonet-frontend/static/css/main.d049e7bd.chunk.css"
   },
   {
-    "revision": "776e736ccbf495204382cb38d616e298",
+    "revision": "b9d2bb176f5061066c5c4b230714a3c0",
     "url": "/tesonet-frontend/index.html"
   }
 ];
