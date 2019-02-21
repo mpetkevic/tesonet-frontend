@@ -1,0 +1,88 @@
+.Login {
+  width: 100%;
+  height: 100vh;
+  background-color: #0b0f27;
+  background-image: url("../../assets/img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    margin-bottom: 70px;
+  }
+
+  form {
+    width: 300px;
+
+    .input {
+      width: 80%;
+      height: 60px;
+      border-radius: 4px;
+      display: flex;
+      margin: auto;
+      margin-bottom: 20px;
+      background-color: #fff;
+      justify-content: center;
+      align-items: center;
+
+      label {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .input-img {
+          height: 20px;
+          margin-left: 10px;
+          margin-right: 5px;
+          margin-bottom: 0;
+          filter: opacity(0.3);
+          transition: all 0.5s;
+
+        }
+      }
+
+      input {
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        color: #999999;
+        border-radius: 4px;
+        font-size: 18px;
+
+        &::placeholder {
+          color: #cccccc;
+        }
+      }
+
+      &:hover {
+        .input-img {
+          filter: opacity(0.5);
+        }
+      }
+    }
+
+    button {
+      width: 80%;
+      height: 60px;
+      border-radius: 4px;
+      margin: auto;
+      display: block;
+      border: none;
+      background-color: #9fd533;
+      color: white;
+      font-size: 16px;
+      outline: none;
+      transition: background-color 0.5s;
+
+      &:hover {
+        background-color: #86b300;
+      }
+    }
+  }
+}
