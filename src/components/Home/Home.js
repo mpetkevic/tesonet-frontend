@@ -1,12 +1,14 @@
 import React, {Component} from 'react';
 import logo from '../../assets/logotype-testio(black).png';
 import logout from '../../assets/logout.png';
+import Loader from '../Loader/Loader';
 import axios from 'axios';
 import './Home.scss';
 
 class Home extends Component {
   state = {
-    servers: []
+    servers: [],
+    loading: true,
   }
 
   async componentDidMount() {
@@ -15,11 +17,8 @@ class Home extends Component {
       const res = await axios.get('https://tesonet-api.herokuapp.com/api/', {params: {
         token
         }});
-      // const res = await axios.get('http://playground.tesonet.lt/v1/servers', {
-      //   headers: { 'Authorization': token }
-      // });
-      console.log(res);
-      this.setState({servers: res.data})
+
+      this.setState({servers: res.data, loading: false})
     } else {
       this.props.history.push('/login');
     }
@@ -43,9 +42,8 @@ class Home extends Component {
       // console.log("B" + b.distance);
       // return a.distance < b.distance;
     })
-    console.log('Servers')
-    console.log(sortedServers);
-    const serversList = this.state.servers.map((server, i) => {
+
+    const serversList = sortedServers.map((server, i) => {
       return (
         <div key={i} className='server-list-item'>
           <span>{server.name}</span>
@@ -65,7 +63,7 @@ class Home extends Component {
           <span>Server</span>
           <span>Distance</span>
         </div>
-        {serversList}
+        {this.state.loading ? <Loader color='#b2b2b2' h={45}/> : serversList}
       </div>
     );
   }

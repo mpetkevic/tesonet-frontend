@@ -2,18 +2,21 @@ import React, {Component} from 'react';
 import logo from '../../assets/logotype-testio.png';
 import user from '../../assets/user.svg';
 import axios from 'axios';
+import Loader from '../Loader/Loader';
 import './Login.scss';
 
 class Login extends Component {
   state = {
     username: '',
-    password: ''
+    password: '',
+    loading: false
   }
 
   onInputChange = e => this.setState({[e.target.name]: e.target.value})
 
   onFormSubmit = async e => {
     e.preventDefault();
+    this.setState({loading: true})
     const res = await axios.post('https://tesonet-api.herokuapp.com/api/', this.state);
     console.log(res.data);
     if(res.data) {
@@ -52,7 +55,9 @@ class Login extends Component {
               onChange={this.onInputChange}
             />
           </div>
-          <button type="submit">Log In</button>
+          <button type="submit">
+            {this.state.loading ? <Loader color='#fff' h={15}/> : "Log In"}
+          </button>
         </form>
       </div>
     );
