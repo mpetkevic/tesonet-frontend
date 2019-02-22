@@ -1,15 +1,15 @@
 {
-  "main.css": "/tesonet-frontend/static/css/main.d049e7bd.chunk.css",
-  "main.js": "/tesonet-frontend/static/js/main.46cbb773.chunk.js",
-  "main.js.map": "/tesonet-frontend/static/js/main.46cbb773.chunk.js.map",
+  "main.css": "/tesonet-frontend/static/css/main.053b22e6.chunk.css",
+  "main.js": "/tesonet-frontend/static/js/main.2d5ebe4a.chunk.js",
+  "main.js.map": "/tesonet-frontend/static/js/main.2d5ebe4a.chunk.js.map",
   "runtime~main.js": "/tesonet-frontend/static/js/runtime~main.8400e24c.js",
   "runtime~main.js.map": "/tesonet-frontend/static/js/runtime~main.8400e24c.js.map",
-  "static/js/2.a79e27ec.chunk.js": "/tesonet-frontend/static/js/2.a79e27ec.chunk.js",
-  "static/js/2.a79e27ec.chunk.js.map": "/tesonet-frontend/static/js/2.a79e27ec.chunk.js.map",
+  "static/js/2.7863c749.chunk.js": "/tesonet-frontend/static/js/2.7863c749.chunk.js",
+  "static/js/2.7863c749.chunk.js.map": "/tesonet-frontend/static/js/2.7863c749.chunk.js.map",
   "index.html": "/tesonet-frontend/index.html",
-  "precache-manifest.228b91b9c1a9b9c0df6dd3a780a5f558.js": "/tesonet-frontend/precache-manifest.228b91b9c1a9b9c0df6dd3a780a5f558.js",
+  "precache-manifest.9b9929a903ecec2bf4dffb656a641562.js": "/tesonet-frontend/precache-manifest.9b9929a903ecec2bf4dffb656a641562.js",
   "service-worker.js": "/tesonet-frontend/service-worker.js",
-  "static/css/main.d049e7bd.chunk.css.map": "/tesonet-frontend/static/css/main.d049e7bd.chunk.css.map",
+  "static/css/main.053b22e6.chunk.css.map": "/tesonet-frontend/static/css/main.053b22e6.chunk.css.map",
   "static/media/Login.scss": "/tesonet-frontend/static/media/img.767b2789.png",
   "static/media/user.svg": "/tesonet-frontend/static/media/user.a96cdf15.svg"
 }
