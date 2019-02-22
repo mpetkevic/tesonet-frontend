@@ -14,8 +14,7 @@ class Login extends Component {
 
   onFormSubmit = async e => {
     e.preventDefault();
-    // console.log(this.state);
-    const res = await axios.post('https://playground.tesonet.lt/v1/tokens', this.state);
+    const res = await axios.post('https://tesonet-api.herokuapp.com/api/', this.state);
     console.log(res.data);
     if(res.data) {
       localStorage.setItem('tesonet-token', res.data.token);
