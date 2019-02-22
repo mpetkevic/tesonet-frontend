@@ -32,6 +32,19 @@ class Home extends Component {
   }
 
   render() {
+    const sortedServers = this.state.servers.sort((a, b) => {
+      if (a.distance < b.distance) {
+        return -1;
+      } else if (a.distance > b.distance) {
+        return 1;
+      } else {
+        return 0;
+      }
+      // console.log("B" + b.distance);
+      // return a.distance < b.distance;
+    })
+    console.log('Servers')
+    console.log(sortedServers);
     const serversList = this.state.servers.map((server, i) => {
       return (
         <div key={i} className='server-list-item'>
